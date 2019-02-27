@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E2CC94521EC77C2008B7002 /* AudioIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CC94321EC77C2008B7002 /* AudioIn.m */; };
+		4E2CC94821EC7861008B7002 /* RealArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CC94621EC7861008B7002 /* RealArray.m */; };
+		4E2CC94921EC789D008B7002 /* AudioIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CC94321EC77C2008B7002 /* AudioIn.m */; };
+		4E2CC94A21EC78A1008B7002 /* RealArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CC94621EC7861008B7002 /* RealArray.m */; };
+		4E31322721E9D1FA00904F73 /* GraphLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31322621E9D1FA00904F73 /* GraphLine.swift */; };
+		4E31322921E9D21F00904F73 /* RadialSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31322821E9D21F00904F73 /* RadialSpec.swift */; };
+		4E31322B21E9D5F000904F73 /* RadSpecDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31322A21E9D5F000904F73 /* RadSpecDraw.swift */; };
+		4E3E411421EB338C002E33B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3E411321EB338C002E33B1 /* AppDelegate.swift */; };
+		4E3E411621EB338C002E33B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3E411521EB338C002E33B1 /* ViewController.swift */; };
+		4E3E411921EB338C002E33B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3E411721EB338C002E33B1 /* Main.storyboard */; };
+		4E3E411B21EB338D002E33B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3E411A21EB338D002E33B1 /* Assets.xcassets */; };
+		4E3E411E21EB338D002E33B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3E411C21EB338D002E33B1 /* LaunchScreen.storyboard */; };
+		4E3E412321EB33CC002E33B1 /* GraphLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31322621E9D1FA00904F73 /* GraphLine.swift */; };
+		4E3E412421EB33D0002E33B1 /* RadialSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E31322821E9D21F00904F73 /* RadialSpec.swift */; };
+		4E3E412521EB33D0002E33B1 /* BaseGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E71364321EA586C002558DA /* BaseGraph.swift */; };
+		4E3E412621EB33D8002E33B1 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44F2E421E746E0004B297D /* Global.swift */; };
+		4E3E412721EB3473002E33B1 /* CSpectrograph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E77F21E0922C0055BA1C /* CSpectrograph.cpp */; };
+		4E3E412821EB3473002E33B1 /* FIR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E77921E0922C0055BA1C /* FIR.cpp */; };
+		4E3E412921EB3473002E33B1 /* LPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E78021E0922C0055BA1C /* LPC.cpp */; };
+		4E3E412A21EB3473002E33B1 /* PolyRoots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E78E21E0922C0055BA1C /* PolyRoots.cpp */; };
+		4E3E412B21EB3473002E33B1 /* SignalWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E78A21E0922C0055BA1C /* SignalWindow.cpp */; };
+		4E3E412C21EB3473002E33B1 /* generateFormants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E7B021E09DAD0055BA1C /* generateFormants.cpp */; };
+		4E3E412E21EB39A9002E33B1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3E412D21EB39A9002E33B1 /* Accelerate.framework */; };
+		4E3E413021EB39EC002E33B1 /* RadSpecDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3E412F21EB39EC002E33B1 /* RadSpecDraw.swift */; };
+		4E3E413421EB3BFA002E33B1 /* FreqRespDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3E413321EB3BFA002E33B1 /* FreqRespDraw.swift */; };
+		4E44F2E321E74223004B297D /* FreqRespGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44F2E221E74223004B297D /* FreqRespGraph.swift */; };
+		4E44F2E521E746E0004B297D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44F2E421E746E0004B297D /* Global.swift */; };
+		4E71364421EA586C002558DA /* BaseGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E71364321EA586C002558DA /* BaseGraph.swift */; };
+		4E9F92C221F07374009F5529 /* MicRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F92C121F07374009F5529 /* MicRecorder.swift */; };
+		4E9F92C321F07374009F5529 /* MicRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9F92C121F07374009F5529 /* MicRecorder.swift */; };
+		4EAF203621F26571000647A6 /* AudioCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF203521F26571000647A6 /* AudioCaptureSession.swift */; };
+		4EF9E76621E091FE0055BA1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E76521E091FE0055BA1C /* AppDelegate.swift */; };
+		4EF9E76821E091FE0055BA1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E76721E091FE0055BA1C /* ViewController.swift */; };
+		4EF9E76A21E091FF0055BA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9E76921E091FF0055BA1C /* Assets.xcassets */; };
+		4EF9E76D21E091FF0055BA1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9E76B21E091FF0055BA1C /* Main.storyboard */; };
+		4EF9E79221E0922C0055BA1C /* FIR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E77921E0922C0055BA1C /* FIR.cpp */; };
+		4EF9E79621E0922C0055BA1C /* CSpectrograph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E77F21E0922C0055BA1C /* CSpectrograph.cpp */; };
+		4EF9E79721E0922C0055BA1C /* LPC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E78021E0922C0055BA1C /* LPC.cpp */; };
+		4EF9E79A21E0922C0055BA1C /* SignalWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E78A21E0922C0055BA1C /* SignalWindow.cpp */; };
+		4EF9E79D21E0922C0055BA1C /* PolyRoots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E78E21E0922C0055BA1C /* PolyRoots.cpp */; };
+		4EF9E7B221E09DAD0055BA1C /* generateFormants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9E7B021E09DAD0055BA1C /* generateFormants.cpp */; };
+		4EF9E7B521E0ABF20055BA1C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF9E7B421E0ABF20055BA1C /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E2568F921E20157001296A9 /* Formants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Formants.h; sourceTree = "<group>"; };
+		4E2CC94321EC77C2008B7002 /* AudioIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioIn.m; sourceTree = "<group>"; };
+		4E2CC94421EC77C2008B7002 /* AudioIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioIn.h; sourceTree = "<group>"; };
+		4E2CC94621EC7861008B7002 /* RealArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealArray.m; sourceTree = "<group>"; };
+		4E2CC94721EC7861008B7002 /* RealArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealArray.h; sourceTree = "<group>"; };
+		4E31322621E9D1FA00904F73 /* GraphLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphLine.swift; sourceTree = "<group>"; };
+		4E31322821E9D21F00904F73 /* RadialSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialSpec.swift; sourceTree = "<group>"; };
+		4E31322A21E9D5F000904F73 /* RadSpecDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadSpecDraw.swift; sourceTree = "<group>"; };
+		4E3E411121EB338C002E33B1 /* formants_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formants_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E3E411321EB338C002E33B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E3E411521EB338C002E33B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E3E411821EB338C002E33B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E3E411A21EB338D002E33B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E3E411D21EB338D002E33B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E3E411F21EB338D002E33B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E3E412D21EB39A9002E33B1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		4E3E412F21EB39EC002E33B1 /* RadSpecDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadSpecDraw.swift; sourceTree = "<group>"; };
+		4E3E413321EB3BFA002E33B1 /* FreqRespDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqRespDraw.swift; sourceTree = "<group>"; };
+		4E44F2E221E74223004B297D /* FreqRespGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreqRespGraph.swift; sourceTree = "<group>"; };
+		4E44F2E421E746E0004B297D /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		4E71364321EA586C002558DA /* BaseGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGraph.swift; sourceTree = "<group>"; };
+		4E76242E21E66F1C00CE0A86 /* misc */ = {isa = PBXFileReference; lastKnownFileType = text; path = misc; sourceTree = "<group>"; };
+		4E9F92C121F07374009F5529 /* MicRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicRecorder.swift; sourceTree = "<group>"; };
+		4EAF203521F26571000647A6 /* AudioCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCaptureSession.swift; sourceTree = "<group>"; };
+		4EF9E76221E091FE0055BA1C /* formants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formants.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF9E76521E091FE0055BA1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EF9E76721E091FE0055BA1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EF9E76921E091FF0055BA1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EF9E76C21E091FF0055BA1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EF9E76E21E091FF0055BA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF9E76F21E091FF0055BA1C /* formants.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = formants.entitlements; sourceTree = "<group>"; };
+		4EF9E77621E0922B0055BA1C /* formants-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "formants-Bridging-Header.h"; sourceTree = "<group>"; };
+		4EF9E77721E0922C0055BA1C /* LPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPC.h; sourceTree = "<group>"; };
+		4EF9E77921E0922C0055BA1C /* FIR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FIR.cpp; sourceTree = "<group>"; };
+		4EF9E77F21E0922C0055BA1C /* CSpectrograph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSpectrograph.cpp; sourceTree = "<group>"; };
+		4EF9E78021E0922C0055BA1C /* LPC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LPC.cpp; sourceTree = "<group>"; };
+		4EF9E78421E0922C0055BA1C /* FIR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIR.h; sourceTree = "<group>"; };
+		4EF9E78521E0922C0055BA1C /* SignalWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalWindow.h; sourceTree = "<group>"; };
+		4EF9E78821E0922C0055BA1C /* CSpectrograph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSpectrograph.h; sourceTree = "<group>"; };
+		4EF9E78A21E0922C0055BA1C /* SignalWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SignalWindow.cpp; sourceTree = "<group>"; };
+		4EF9E78E21E0922C0055BA1C /* PolyRoots.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolyRoots.cpp; sourceTree = "<group>"; };
+		4EF9E79021E0922C0055BA1C /* PolyRoots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyRoots.h; sourceTree = "<group>"; };
+		4EF9E7B021E09DAD0055BA1C /* generateFormants.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = generateFormants.cpp; sourceTree = "<group>"; };
+		4EF9E7B121E09DAD0055BA1C /* generateFormants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = generateFormants.hpp; sourceTree = "<group>"; };
+		4EF9E7B421E0ABF20055BA1C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E3E410E21EB338C002E33B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3E412E21EB39A9002E33B1 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF9E75F21E091FE0055BA1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF9E7B521E0ABF20055BA1C /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E2CC94221EC77B6008B7002 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				4E2CC94421EC77C2008B7002 /* AudioIn.h */,
+				4E2CC94321EC77C2008B7002 /* AudioIn.m */,
+				4E2CC94721EC7861008B7002 /* RealArray.h */,
+				4E2CC94621EC7861008B7002 /* RealArray.m */,
+				4E9F92C121F07374009F5529 /* MicRecorder.swift */,
+				4EAF203521F26571000647A6 /* AudioCaptureSession.swift */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		4E3E411221EB338C002E33B1 /* formants_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E3E411321EB338C002E33B1 /* AppDelegate.swift */,
+				4E3E411521EB338C002E33B1 /* ViewController.swift */,
+				4E3E412F21EB39EC002E33B1 /* RadSpecDraw.swift */,
+				4E3E413321EB3BFA002E33B1 /* FreqRespDraw.swift */,
+				4E3E411A21EB338D002E33B1 /* Assets.xcassets */,
+				4E3E411C21EB338D002E33B1 /* LaunchScreen.storyboard */,
+				4E3E411F21EB338D002E33B1 /* Info.plist */,
+				4E3E411721EB338C002E33B1 /* Main.storyboard */,
+			);
+			path = formants_iOS;
+			sourceTree = "<group>";
+		};
+		4E71364221EA582D002558DA /* graph */ = {
+			isa = PBXGroup;
+			children = (
+				4E31322621E9D1FA00904F73 /* GraphLine.swift */,
+				4E31322821E9D21F00904F73 /* RadialSpec.swift */,
+				4E71364321EA586C002558DA /* BaseGraph.swift */,
+			);
+			path = graph;
+			sourceTree = "<group>";
+		};
+		4EF9E75921E091FE0055BA1C = {
+			isa = PBXGroup;
+			children = (
+				4EF9E77621E0922B0055BA1C /* formants-Bridging-Header.h */,
+				4E44F2E421E746E0004B297D /* Global.swift */,
+				4E2CC94221EC77B6008B7002 /* audio */,
+				4EF9E77521E092090055BA1C /* cpp */,
+				4E71364221EA582D002558DA /* graph */,
+				4EF9E76421E091FE0055BA1C /* formants */,
+				4E3E411221EB338C002E33B1 /* formants_iOS */,
+				4EF9E76321E091FE0055BA1C /* Products */,
+				4EF9E7B321E0ABF20055BA1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4EF9E76321E091FE0055BA1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9E76221E091FE0055BA1C /* formants.app */,
+				4E3E411121EB338C002E33B1 /* formants_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EF9E76421E091FE0055BA1C /* formants */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9E76521E091FE0055BA1C /* AppDelegate.swift */,
+				4EF9E76721E091FE0055BA1C /* ViewController.swift */,
+				4E44F2E221E74223004B297D /* FreqRespGraph.swift */,
+				4E31322A21E9D5F000904F73 /* RadSpecDraw.swift */,
+				4EF9E76921E091FF0055BA1C /* Assets.xcassets */,
+				4EF9E76E21E091FF0055BA1C /* Info.plist */,
+				4EF9E76F21E091FF0055BA1C /* formants.entitlements */,
+				4EF9E76B21E091FF0055BA1C /* Main.storyboard */,
+			);
+			path = formants;
+			sourceTree = "<group>";
+		};
+		4EF9E77521E092090055BA1C /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				4E2568F921E20157001296A9 /* Formants.h */,
+				4EF9E77F21E0922C0055BA1C /* CSpectrograph.cpp */,
+				4EF9E78821E0922C0055BA1C /* CSpectrograph.h */,
+				4EF9E77921E0922C0055BA1C /* FIR.cpp */,
+				4EF9E78421E0922C0055BA1C /* FIR.h */,
+				4EF9E78021E0922C0055BA1C /* LPC.cpp */,
+				4EF9E77721E0922C0055BA1C /* LPC.h */,
+				4EF9E78E21E0922C0055BA1C /* PolyRoots.cpp */,
+				4EF9E79021E0922C0055BA1C /* PolyRoots.h */,
+				4EF9E78A21E0922C0055BA1C /* SignalWindow.cpp */,
+				4EF9E78521E0922C0055BA1C /* SignalWindow.h */,
+				4EF9E7B021E09DAD0055BA1C /* generateFormants.cpp */,
+				4EF9E7B121E09DAD0055BA1C /* generateFormants.hpp */,
+				4E76242E21E66F1C00CE0A86 /* misc */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		4EF9E7B321E0ABF20055BA1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E3E412D21EB39A9002E33B1 /* Accelerate.framework */,
+				4EF9E7B421E0ABF20055BA1C /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E3E411021EB338C002E33B1 /* formants_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E3E412221EB338D002E33B1 /* Build configuration list for PBXNativeTarget "formants_iOS" */;
+			buildPhases = (
+				4E3E410D21EB338C002E33B1 /* Sources */,
+				4E3E410E21EB338C002E33B1 /* Frameworks */,
+				4E3E410F21EB338C002E33B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = formants_iOS;
+			productName = formants_iOS;
+			productReference = 4E3E411121EB338C002E33B1 /* formants_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EF9E76121E091FE0055BA1C /* formants */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF9E77221E091FF0055BA1C /* Build configuration list for PBXNativeTarget "formants" */;
+			buildPhases = (
+				4EF9E75E21E091FE0055BA1C /* Sources */,
+				4EF9E75F21E091FE0055BA1C /* Frameworks */,
+				4EF9E76021E091FE0055BA1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = formants;
+			productName = formants;
+			productReference = 4EF9E76221E091FE0055BA1C /* formants.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EF9E75A21E091FE0055BA1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = voicesync;
+				TargetAttributes = {
+					4E3E411021EB338C002E33B1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4EF9E76121E091FE0055BA1C = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4EF9E75D21E091FE0055BA1C /* Build configuration list for PBXProject "formants" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EF9E75921E091FE0055BA1C;
+			productRefGroup = 4EF9E76321E091FE0055BA1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EF9E76121E091FE0055BA1C /* formants */,
+				4E3E411021EB338C002E33B1 /* formants_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E3E410F21EB338C002E33B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3E411E21EB338D002E33B1 /* LaunchScreen.storyboard in Resources */,
+				4E3E411B21EB338D002E33B1 /* Assets.xcassets in Resources */,
+				4E3E411921EB338C002E33B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF9E76021E091FE0055BA1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF9E76A21E091FF0055BA1C /* Assets.xcassets in Resources */,
+				4EF9E76D21E091FF0055BA1C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E3E410D21EB338C002E33B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3E411621EB338C002E33B1 /* ViewController.swift in Sources */,
+				4E3E412B21EB3473002E33B1 /* SignalWindow.cpp in Sources */,
+				4E3E412C21EB3473002E33B1 /* generateFormants.cpp in Sources */,
+				4E3E412821EB3473002E33B1 /* FIR.cpp in Sources */,
+				4E3E412321EB33CC002E33B1 /* GraphLine.swift in Sources */,
+				4E3E412721EB3473002E33B1 /* CSpectrograph.cpp in Sources */,
+				4E3E412621EB33D8002E33B1 /* Global.swift in Sources */,
+				4E3E412521EB33D0002E33B1 /* BaseGraph.swift in Sources */,
+				4E3E412921EB3473002E33B1 /* LPC.cpp in Sources */,
+				4E2CC94A21EC78A1008B7002 /* RealArray.m in Sources */,
+				4E3E413421EB3BFA002E33B1 /* FreqRespDraw.swift in Sources */,
+				4E3E412A21EB3473002E33B1 /* PolyRoots.cpp in Sources */,
+				4E3E411421EB338C002E33B1 /* AppDelegate.swift in Sources */,
+				4E3E412421EB33D0002E33B1 /* RadialSpec.swift in Sources */,
+				4E9F92C321F07374009F5529 /* MicRecorder.swift in Sources */,
+				4E3E413021EB39EC002E33B1 /* RadSpecDraw.swift in Sources */,
+				4E2CC94921EC789D008B7002 /* AudioIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF9E75E21E091FE0055BA1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E31322721E9D1FA00904F73 /* GraphLine.swift in Sources */,
+				4EF9E79221E0922C0055BA1C /* FIR.cpp in Sources */,
+				4EF9E76821E091FE0055BA1C /* ViewController.swift in Sources */,
+				4EF9E79D21E0922C0055BA1C /* PolyRoots.cpp in Sources */,
+				4EF9E79721E0922C0055BA1C /* LPC.cpp in Sources */,
+				4E71364421EA586C002558DA /* BaseGraph.swift in Sources */,
+				4EF9E76621E091FE0055BA1C /* AppDelegate.swift in Sources */,
+				4EF9E7B221E09DAD0055BA1C /* generateFormants.cpp in Sources */,
+				4EF9E79621E0922C0055BA1C /* CSpectrograph.cpp in Sources */,
+				4E2CC94821EC7861008B7002 /* RealArray.m in Sources */,
+				4E44F2E321E74223004B297D /* FreqRespGraph.swift in Sources */,
+				4E44F2E521E746E0004B297D /* Global.swift in Sources */,
+				4EF9E79A21E0922C0055BA1C /* SignalWindow.cpp in Sources */,
+				4E31322921E9D21F00904F73 /* RadialSpec.swift in Sources */,
+				4EAF203621F26571000647A6 /* AudioCaptureSession.swift in Sources */,
+				4E9F92C221F07374009F5529 /* MicRecorder.swift in Sources */,
+				4E31322B21E9D5F000904F73 /* RadSpecDraw.swift in Sources */,
+				4E2CC94521EC77C2008B7002 /* AudioIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E3E411721EB338C002E33B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E3E411821EB338C002E33B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E3E411C21EB338D002E33B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E3E411D21EB338D002E33B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4EF9E76B21E091FF0055BA1C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EF9E76C21E091FF0055BA1C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E3E412021EB338D002E33B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
+				INFOPLIST_FILE = formants_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "voicesync.formants-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "formants-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E3E412121EB338D002E33B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
+				INFOPLIST_FILE = formants_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "voicesync.formants-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "formants-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EF9E77021E091FF0055BA1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EF9E77121E091FF0055BA1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4EF9E77321E091FF0055BA1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = formants/formants.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"FFTWPP_SINGLE_THREAD=1",
+				);
+				INFOPLIST_FILE = formants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = voicesync.formants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "formants-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4EF9E77421E091FF0055BA1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = formants/formants.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ALFNML2A4Q;
+				GCC_PREPROCESSOR_DEFINITIONS = "FFTWPP_SINGLE_THREAD=1";
+				INFOPLIST_FILE = formants/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = voicesync.formants;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "formants-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E3E412221EB338D002E33B1 /* Build configuration list for PBXNativeTarget "formants_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E3E412021EB338D002E33B1 /* Debug */,
+				4E3E412121EB338D002E33B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF9E75D21E091FE0055BA1C /* Build configuration list for PBXProject "formants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF9E77021E091FF0055BA1C /* Debug */,
+				4EF9E77121E091FF0055BA1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF9E77221E091FF0055BA1C /* Build configuration list for PBXNativeTarget "formants" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF9E77321E091FF0055BA1C /* Debug */,
+				4EF9E77421E091FF0055BA1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EF9E75A21E091FE0055BA1C /* Project object */;
+}

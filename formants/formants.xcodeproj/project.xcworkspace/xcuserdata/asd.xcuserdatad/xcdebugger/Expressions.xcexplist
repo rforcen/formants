@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CSpectrograph::CSpectrograph(int, int):CSpectrograph.h">
+      </ContextState>
+      <ContextState
+         contextName = "::generateFormants(size_t, size_t, float *):generateFormants.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "CSpectrograph::LCPformants():CSpectrograph.h">
+      </ContextState>
+      <ContextState
+         contextName = "wavFormants #1 () in ViewController.viewDidLoad():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.viewDidLoad():ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CSpectrograph::FFTdsp(std::__1::vector&lt;std::__1::complex&lt;double&gt;, std::__1::allocator&lt;std::__1::complex&lt;double&gt; &gt; &gt;):CSpectrograph.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "input">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

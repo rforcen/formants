@@ -1,0 +1,31 @@
+vector<Complex>FFTdsp(vector<Complex>input) {
+
+const int log2n=n2pow2((int)input.size()),
+n = 1<<log2n, n2=n/2;
+
+DSPSplitComplex cxfft;
+cxfft.realp = new float[n];
+cxfft.imagp = new float[n];
+
+// convert Complex(double) to float
+for (int i=0; i<n; i++) {
+cxfft.realp[i]=(float)input[i].real();
+cxfft.imagp[i]=(float)input[i].imag();
+}
+
+// prepare the fft algo (you want to reuse the setup across fft calculations)
+FFTSetup setup = vDSP_create_fftsetup(log2n, kFFTRadix2);
+
+vDSP_fft_zrip(setup, &cxfft, 1, log2n, FFT_FORWARD); // calculate the fft
+
+for (int i=0; i<n2; i++)
+input[i] = Complex(cxfft.realp[i], cxfft.imagp[i]);
+
+vDSP_destroy_fftsetup(setup); // release resources
+delete[]cxfft.realp;
+delete[]cxfft.imagp;
+
+input.resize(n2);
+return input;
+}
+
